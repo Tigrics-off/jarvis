@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jarvis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2f058def5e71fe250b5ee87a7d890685f4e2f5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5866de31db116244f8ace7f8bb14b9f60852e29")]
 [assembly: System.Reflection.AssemblyProductAttribute("jarvis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jarvis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
