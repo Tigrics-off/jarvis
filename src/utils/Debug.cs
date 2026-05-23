@@ -3,7 +3,7 @@ using System;
 
 static class Debug
 {
-    //? Important (not) stuff
+    //* A bear was walking through the forest and saw a car on fire. He got in and was burned to death.
     public static void Info(String Message)
     {
         Console.WriteLine($"\x1b[32m [:)] {Message} \x1b[0m"); //* Green

@@ -2,9 +2,10 @@
 namespace jarvis;
 using jarvis.debug;
 using jarvis.config;
-using System;
 using jarvis.brain;
+using System;
 using SysProcess = System.Diagnostics.Process;
+using ManagedBass;
 
 class Program
 {
@@ -34,6 +35,10 @@ class Program
 
         //// Wake up, Daddy`s home
         Debug.Info("Jarvis init");
+        string startupAdreess = "assets/startup.mp3";
+        Bass.Init(-1, 44100);
+        int stream = Bass.CreateStream(startupAdreess);
+        Bass.ChannelPlay(stream);
 
         Brain brain = new Brain(); //? Init AI
         while (true)

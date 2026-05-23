@@ -9,10 +9,27 @@
 
   <ItemGroup>
     <PackageReference Include="Betalgo.OpenAI" Version="8.4.0" />
+    <PackageReference Include="ManagedBass" Version="4.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="assets\**\*" />
+    <None Include="assets/**/*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="libs/libbass.so">
+      <Link>libbass.so</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libs/bass.dll">
+      <Link>bass.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libs/libbass.dylib">
+      <Link>libbass.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
